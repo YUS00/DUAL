@@ -27,7 +27,7 @@ namespace timer
             int i = r2.Next(chars.Length);
             string cod_seguridad = (chars[i].ToString()) + (numero.ToString());
             label2.Text = cod_seguridad;
-            
+            AnadirBotones();
         }
         public void AnadirBotones()
         {
@@ -64,7 +64,6 @@ namespace timer
         private void tableLayoutPanel_botones_Click(object sender, EventArgs e)
         {
             if (textBox1.Text.Length < 4) textBox1.Text += ((Button)sender).Text;
-
         }
         private void button1_Click_1(object sender, EventArgs e)
         {

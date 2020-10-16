@@ -24,6 +24,7 @@ namespace timer
 
             if (progressBar1.Value < 100)
             {
+                progressBar1.ForeColor = Color.Red;
                 progressBar1.Value += 1;
             }else
             {
