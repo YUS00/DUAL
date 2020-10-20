@@ -13,3 +13,15 @@ C:\Users\Pc\Desktop\CLASE\M20-master\timer\bin\timer.pdb
 C:\S2AM\M20\APP DUAL\APP\timer.exe.config
 C:\S2AM\M20\APP DUAL\APP\timer.exe
 C:\S2AM\M20\APP DUAL\APP\timer.pdb
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\APP_DUAL.csprojAssemblyReference.cache
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\timer.SPLASH.resources
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\timer.KEYPAD.resources
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\timer.Properties.Resources.resources
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\timer.SEGON.resources
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\APP_DUAL.csproj.GenerateResource.cache
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\APP_DUAL.csproj.CoreCompileInputs.cache
+C:\Users\CR\Documents\GitHub\DUAL\timer.exe.config
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\timer.exe
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\timer.pdb
+C:\Users\CR\Documents\GitHub\DUAL\timer.exe
+C:\Users\CR\Documents\GitHub\DUAL\timer.pdb
