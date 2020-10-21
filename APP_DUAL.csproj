@@ -141,6 +141,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\source\repos\WindowsFormsControlLibrary_Proyecto1\WindowsFormsControlLibrary_Proyecto1\WindowsFormsControlLibrary_Proyecto1.csproj">
+      <Project>{c24c5166-3427-481e-8110-68820ea5eb57}</Project>
+      <Name>WindowsFormsControlLibrary_Proyecto1</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Libreria_Clases_DUAL_1\Libreria_Clases_DUAL_1\Libreria_Clases_DUAL_1.csproj">
       <Project>{30aaa2dd-dd84-4741-aa88-55986c4b5d66}</Project>
       <Name>Libreria_Clases_DUAL_1</Name>

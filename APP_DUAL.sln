@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APP_DUAL", "APP_DUAL.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libreria_Clases_DUAL_1", "..\Libreria_Clases_DUAL_1\Libreria_Clases_DUAL_1\Libreria_Clases_DUAL_1.csproj", "{30AAA2DD-DD84-4741-AA88-55986C4B5D66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsControlLibrary_Proyecto1", "..\..\..\source\repos\WindowsFormsControlLibrary_Proyecto1\WindowsFormsControlLibrary_Proyecto1\WindowsFormsControlLibrary_Proyecto1.csproj", "{C24C5166-3427-481E-8110-68820EA5EB57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{30AAA2DD-DD84-4741-AA88-55986C4B5D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30AAA2DD-DD84-4741-AA88-55986C4B5D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30AAA2DD-DD84-4741-AA88-55986C4B5D66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C24C5166-3427-481E-8110-68820EA5EB57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C24C5166-3427-481E-8110-68820EA5EB57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C24C5166-3427-481E-8110-68820EA5EB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C24C5166-3427-481E-8110-68820EA5EB57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

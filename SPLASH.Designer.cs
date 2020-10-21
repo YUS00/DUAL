@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.tematica1 = new WindowsFormsControlLibrary_Proyecto1.Tematica();
             this.SuspendLayout();
             // 
             // label1
@@ -41,9 +42,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(288, 372);
+            this.label1.Location = new System.Drawing.Point(384, 458);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 42);
+            this.label1.Size = new System.Drawing.Size(283, 54);
             this.label1.TabIndex = 0;
             this.label1.Text = "DARK SIDE";
             // 
@@ -56,24 +58,39 @@
             // progressBar1
             // 
             this.progressBar1.ForeColor = System.Drawing.Color.Gold;
-            this.progressBar1.Location = new System.Drawing.Point(3, 417);
+            this.progressBar1.Location = new System.Drawing.Point(4, 513);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(797, 10);
+            this.progressBar1.Size = new System.Drawing.Size(1063, 12);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 1;
             // 
+            // tematica1
+            // 
+            this.tematica1.Boton_Apagado_Texto = "X";
+            this.tematica1.Location = new System.Drawing.Point(-8, 12);
+            this.tematica1.Name = "tematica1";
+            this.tematica1.Size = new System.Drawing.Size(1075, 534);
+            this.tematica1.Step = 1;
+            this.tematica1.TabIndex = 2;
+            this.tematica1.Titulo = "PEPE";
+            this.tematica1.Valor = 100;
+            this.tematica1.ValorMaximo = 100;
+            // 
             // SPLASH
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(800, 439);
+            this.ClientSize = new System.Drawing.Size(1067, 540);
+            this.Controls.Add(this.tematica1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "SPLASH";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -90,6 +107,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private WindowsFormsControlLibrary_Proyecto1.Tematica tematica1;
     }
 }
 
