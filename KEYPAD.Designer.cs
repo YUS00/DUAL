@@ -1,6 +1,6 @@
 ﻿namespace timer
 {
-    partial class KEYPAD
+    partial class Keypad
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KEYPAD));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Keypad));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel_botones = new System.Windows.Forms.TableLayoutPanel();
@@ -68,7 +68,7 @@
             this.tableLayoutPanel_botones.ColumnCount = 3;
             this.tableLayoutPanel_botones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.31056F));
             this.tableLayoutPanel_botones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.68944F));
-            this.tableLayoutPanel_botones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel_botones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
             this.tableLayoutPanel_botones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
             this.tableLayoutPanel_botones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
             this.tableLayoutPanel_botones.Controls.Add(this.button2, 0, 3);
@@ -99,7 +99,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(159, 187);
+            this.button1.Location = new System.Drawing.Point(158, 187);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(70, 50);
             this.button1.TabIndex = 2;
@@ -118,7 +118,7 @@
             this.textBox1.Size = new System.Drawing.Size(58, 23);
             this.textBox1.TabIndex = 3;
             // 
-            // KEYPAD
+            // Keypad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -130,7 +130,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "KEYPAD";
+            this.Name = "Keypad";
             this.Text = "KEYPAD";
             this.Load += new System.EventHandler(this.KEYPAD_Load);
             this.tableLayoutPanel_botones.ResumeLayout(false);

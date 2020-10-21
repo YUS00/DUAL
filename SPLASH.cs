@@ -1,19 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
 
 namespace timer
 {
-    public partial class SPLASH : Form
+    public partial class Splash : Form
     {
-        public SPLASH()
+        public Splash()
 
         {
             InitializeComponent();
@@ -22,14 +14,13 @@ namespace timer
         private void timer1_Tick(object sender, EventArgs e)
         {
 
-            if (progressBar1.Value < 100)
+            circularProgressBar1.Value += 1;
+
+            if (circularProgressBar1.Value == 100)
             {
-                progressBar1.ForeColor = Color.Red;
-                progressBar1.Value += 1;
-            }else
-            {
+                timer1.Enabled = false;
                 timer1.Stop();
-                SEGON fm2 = new SEGON();
+                Login fm2 = new Login();
                 fm2.Show();
                 this.Hide();
             }
@@ -37,17 +28,22 @@ namespace timer
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            circularProgressBar1.Minimum = 1;
+            circularProgressBar1.Maximum = 100;
+            circularProgressBar1.Value = 1;
+            timer1.Enabled = true;
+            timer1.Interval = 100;
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Modifiers == Keys.Alt && e.KeyCode == Keys.F2)
-                   {
+            {
                 timer1.Stop();
-                KEYPAD fm3 = new KEYPAD();
+                Keypad fm3 = new Keypad();
                 fm3.Show();
                 this.Hide();
-                   }
+            }
         }
     }
 }

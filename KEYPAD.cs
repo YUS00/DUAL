@@ -1,19 +1,14 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace timer
 {
-    public partial class KEYPAD : Form
+    public partial class Keypad : Form
     {
-        public KEYPAD()
+        public Keypad()
         {
             InitializeComponent();
         }
@@ -46,7 +41,7 @@ namespace timer
                 cola.Enqueue(arraylist[random]);
                 arraylist.RemoveAt(random);
             }
-            for (int i=0; i < 10; i++)
+            for (int i = 0; i < 10; i++)
             {
                 Button boton_panel = new Button();
                 boton_panel.Width = 80;
@@ -70,13 +65,15 @@ namespace timer
 
             if (textBox1.Text.Equals("1234"))
             {
-                MessageBox.Show("PATATA");
+                Admin fm3 = new Admin();
+                fm3.Show();
+                this.Hide();
             }
             else if (!(textBox1.Text.Equals("1234")))
             {
                 MessageBox.Show("ERROR");
                 Application.Exit();
-                            }
+            }
         }
     }
 }
