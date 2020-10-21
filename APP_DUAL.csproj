@@ -68,6 +68,12 @@
   <ItemGroup>
     <Compile Include="ArrayList.cs" />
     <Compile Include="Integer.cs" />
+    <Compile Include="PROTOTIPADO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PROTOTIPADO.Designer.cs">
+      <DependentUpon>PROTOTIPADO.cs</DependentUpon>
+    </Compile>
     <Compile Include="SPLASH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     <Compile Include="SEGON.Designer.cs">
       <DependentUpon>SEGON.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PROTOTIPADO.resx">
+      <DependentUpon>PROTOTIPADO.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SPLASH.resx">
       <DependentUpon>SPLASH.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +139,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Libreria_Clases_DUAL_1\Libreria_Clases_DUAL_1\Libreria_Clases_DUAL_1.csproj">
+      <Project>{30aaa2dd-dd84-4741-aa88-55986c4b5d66}</Project>
+      <Name>Libreria_Clases_DUAL_1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

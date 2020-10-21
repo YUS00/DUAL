@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1069, 541);
+            this.ClientSize = new System.Drawing.Size(990, 524);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PROTOTIPADO";
             this.Text = "PROTOTIPADO";

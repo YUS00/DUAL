@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace timer
 {
-    public partial class PROTOTIPADO : Form
+    public partial class PROTOTIPADO : Libreria_Clases_DUAL_1.lc_Prototipado
     {
         public PROTOTIPADO()
         {
