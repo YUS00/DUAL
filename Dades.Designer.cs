@@ -36,20 +36,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.delete_bttn = new System.Windows.Forms.Button();
             this.save_bttn = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(590, 196);
+            this.textBox1.Location = new System.Drawing.Point(67, 252);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 29);
+            this.textBox1.Size = new System.Drawing.Size(118, 24);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(86, 196);
+            this.textBox2.Location = new System.Drawing.Point(67, 141);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 29);
             this.textBox2.TabIndex = 1;
@@ -72,7 +74,7 @@
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.label2.ForeColor = System.Drawing.Color.DarkRed;
-            this.label2.Location = new System.Drawing.Point(39, 150);
+            this.label2.Location = new System.Drawing.Point(41, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(168, 31);
             this.label2.TabIndex = 3;
@@ -84,7 +86,7 @@
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.label3.ForeColor = System.Drawing.Color.DarkRed;
-            this.label3.Location = new System.Drawing.Point(564, 150);
+            this.label3.Location = new System.Drawing.Point(41, 206);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(213, 31);
             this.label3.TabIndex = 4;
@@ -114,6 +116,29 @@
             this.save_bttn.UseVisualStyleBackColor = false;
             this.save_bttn.Click += new System.EventHandler(this.save_bttn_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "GUTI-THE-BEST",
+            "YOUSEF-THE-MASTER"});
+            this.comboBox1.Location = new System.Drawing.Point(601, 163);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(141, 21);
+            this.comboBox1.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.label4.ForeColor = System.Drawing.Color.DarkRed;
+            this.label4.Location = new System.Drawing.Point(595, 114);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(108, 31);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "USERS";
+            // 
             // Dades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -121,6 +146,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.save_bttn);
             this.Controls.Add(this.delete_bttn);
             this.Controls.Add(this.label3);
@@ -145,5 +172,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button delete_bttn;
         private System.Windows.Forms.Button save_bttn;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label4;
     }
 }
