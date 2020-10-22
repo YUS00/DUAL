@@ -49,5 +49,22 @@ namespace timer
             return HostName;
 
         }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+        }
+
+        private void save_bttn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("SE HA GUARDADO");
+        }
+
+        private void Dades_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+        }
     }
 }

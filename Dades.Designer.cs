@@ -34,6 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.delete_bttn = new System.Windows.Forms.Button();
+            this.save_bttn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -87,6 +89,30 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "MAC ADDRESS";
             // 
+            // delete_bttn
+            // 
+            this.delete_bttn.BackColor = System.Drawing.Color.White;
+            this.delete_bttn.ForeColor = System.Drawing.Color.Red;
+            this.delete_bttn.Location = new System.Drawing.Point(479, 347);
+            this.delete_bttn.Name = "delete_bttn";
+            this.delete_bttn.Size = new System.Drawing.Size(75, 23);
+            this.delete_bttn.TabIndex = 6;
+            this.delete_bttn.Text = "CLEAR";
+            this.delete_bttn.UseVisualStyleBackColor = false;
+            this.delete_bttn.Click += new System.EventHandler(this.delete_Click);
+            // 
+            // save_bttn
+            // 
+            this.save_bttn.BackColor = System.Drawing.Color.White;
+            this.save_bttn.ForeColor = System.Drawing.Color.Red;
+            this.save_bttn.Location = new System.Drawing.Point(238, 347);
+            this.save_bttn.Name = "save_bttn";
+            this.save_bttn.Size = new System.Drawing.Size(75, 23);
+            this.save_bttn.TabIndex = 7;
+            this.save_bttn.Text = "SAVE";
+            this.save_bttn.UseVisualStyleBackColor = false;
+            this.save_bttn.Click += new System.EventHandler(this.save_bttn_Click);
+            // 
             // Dades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -94,6 +120,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.save_bttn);
+            this.Controls.Add(this.delete_bttn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -114,5 +142,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button delete_bttn;
+        private System.Windows.Forms.Button save_bttn;
     }
 }
