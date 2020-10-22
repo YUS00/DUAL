@@ -40,9 +40,10 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(592, 196);
+            this.textBox1.Location = new System.Drawing.Point(590, 196);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(100, 29);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
@@ -59,7 +60,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.ControlText;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(197, 43);
+            this.label1.Location = new System.Drawing.Point(197, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(414, 31);
             this.label1.TabIndex = 2;
