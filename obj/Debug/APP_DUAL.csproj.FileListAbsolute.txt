@@ -20,3 +20,23 @@ C:\S2AM\M20\APP DUAL\APP\obj\Debug\timer.Menu.resources
 C:\S2AM\M20\APP DUAL\APP\obj\Debug\timer.Login.resources
 C:\S2AM\M20\APP DUAL\APP\obj\Debug\timer.Admin.resources
 C:\S2AM\M20\APP DUAL\APP\obj\Debug\timer.Dades.resources
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\APP_DUAL.csprojAssemblyReference.cache
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\timer.Admin.resources
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\timer.Coordenadas.resources
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\timer.Dades.resources
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\timer.Menu.resources
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\timer.Splash.resources
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\timer.Keypad.resources
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\timer.Properties.Resources.resources
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\timer.Login.resources
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\APP_DUAL.csproj.GenerateResource.cache
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\APP_DUAL.csproj.CoreCompileInputs.cache
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\APP_DUAL.csproj.CopyComplete
+C:\Users\CR\Documents\GitHub\DUAL\timer.exe.config
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\timer.exe
+C:\Users\CR\Documents\GitHub\DUAL\obj\Debug\timer.pdb
+C:\Users\CR\Documents\GitHub\DUAL\timer.exe
+C:\Users\CR\Documents\GitHub\DUAL\timer.pdb
+C:\Users\CR\Documents\GitHub\DUAL\CircularProgressBar.dll
+C:\Users\CR\Documents\GitHub\DUAL\WinFormAnimation.dll
+C:\Users\CR\Documents\GitHub\DUAL\CircularProgressBar.xml

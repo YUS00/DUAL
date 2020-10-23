@@ -79,6 +79,12 @@
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="ArrayList.cs" />
+    <Compile Include="Coordenadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coordenadas.Designer.cs">
+      <DependentUpon>Coordenadas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coordenadas.resx">
+      <DependentUpon>Coordenadas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dades.resx">
       <DependentUpon>Dades.cs</DependentUpon>
