@@ -1,23 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
 using System.Net;
-using System.Threading.Tasks;
+using System.Net.NetworkInformation;
 using System.Windows.Forms;
 
 namespace timer
 {
-    public partial class Dades : Form
+    public partial class Dades_equip : Form
     {
-        public Dades()
+        public Dades_equip()
         {
             InitializeComponent();
-            string macAdd ;
+            string macAdd;
             macAdd = GetMacAddress();
             textBox1.Text = macAdd;
             string hostName;
@@ -49,13 +42,11 @@ namespace timer
             return HostName;
 
         }
-
         private void delete_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
             textBox2.Clear();
         }
-
         private void save_bttn_Click(object sender, EventArgs e)
         {
             MessageBox.Show("SE HA GUARDADO");

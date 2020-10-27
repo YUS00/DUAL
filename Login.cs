@@ -19,7 +19,7 @@ namespace timer
 
             if ((this.textBox1.Text == "Admin") && (this.textBox3.Text == "admin"))
             {
-                attempt = 0;                
+                attempt = 0;
                 Menu fm2 = new Menu();
                 fm2.Show();
                 this.Hide();

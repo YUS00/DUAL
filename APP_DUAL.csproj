@@ -79,11 +79,23 @@
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="ArrayList.cs" />
-    <Compile Include="Dades.cs">
+    <Compile Include="Coordenadas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dades.Designer.cs">
-      <DependentUpon>Dades.cs</DependentUpon>
+    <Compile Include="Coordenadas.Designer.cs">
+      <DependentUpon>Coordenadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dades_equip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dades_equip.Designer.cs">
+      <DependentUpon>Dades_equip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dades_usuari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dades_usuari.Designer.cs">
+      <DependentUpon>Dades_usuari.cs</DependentUpon>
     </Compile>
     <Compile Include="Integer.cs" />
     <Compile Include="Menu.cs">
@@ -115,8 +127,14 @@
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dades.resx">
-      <DependentUpon>Dades.cs</DependentUpon>
+    <EmbeddedResource Include="Coordenadas.resx">
+      <DependentUpon>Coordenadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dades_equip.resx">
+      <DependentUpon>Dades_equip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dades_usuari.resx">
+      <DependentUpon>Dades_usuari.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

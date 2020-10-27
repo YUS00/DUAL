@@ -54,7 +54,7 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(381, 40);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(393, 235);
+            this.panel1.Size = new System.Drawing.Size(393, 322);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -63,9 +63,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(71, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 37);
+            this.label1.Size = new System.Drawing.Size(171, 37);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Category 2";
+            this.label1.Text = "Category 1";
             // 
             // pictureBox1
             // 
@@ -82,13 +82,14 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(3, 166);
+            this.button3.Location = new System.Drawing.Point(0, 216);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(160, 66);
+            this.button3.Size = new System.Drawing.Size(160, 85);
             this.button3.TabIndex = 2;
             this.button3.Text = "Opciò 3";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -96,13 +97,14 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(230, 99);
+            this.button2.Location = new System.Drawing.Point(0, 109);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 66);
+            this.button2.Size = new System.Drawing.Size(160, 84);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Opciò 2";
+            this.button2.Text = "Opciò 1";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -110,11 +112,11 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 99);
+            this.button1.Location = new System.Drawing.Point(203, 109);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 66);
+            this.button1.Size = new System.Drawing.Size(160, 84);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Opciò 1";
+            this.button1.Text = "Opciò 2";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
