@@ -85,24 +85,26 @@ namespace timer
                         numero_cadena = "0" + numero_cadena;
                     }
 
-                    Diccionario1.Add(id_codigo[1], numero_cadena);
-
                     return numero_cadena;
                 //}
             }
 
+            String hola = Obtener_numero();
+
+            Diccionario1.Add(id_codigo[1], hola);
 
 
-            for (int i = 0; i < 20; i++)
+            for (int i = 1; i < 20; i++)
             {
+                String hola2;
 
                 do
                 {
-                    Obtener_numero();
+                    hola2 = Obtener_numero();
 
-                } while (Diccionario1.ContainsKey(id_codigo[i]));
+                } while (Diccionario1.ContainsValue(hola2));
 
-
+                Diccionario1.Add(id_codigo[i], hola2);
                 Label label_panel = new Label();
                 label_panel.Width = 80;
                 label_panel.Height = 80;
