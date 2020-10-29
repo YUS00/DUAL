@@ -53,7 +53,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.label_X, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label_5, 5, 0);
@@ -116,7 +116,7 @@
             this.label_4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label_4.AutoSize = true;
             this.label_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_4.Location = new System.Drawing.Point(458, 0);
+            this.label_4.Location = new System.Drawing.Point(457, 0);
             this.label_4.Name = "label_4";
             this.label_4.Size = new System.Drawing.Size(47, 52);
             this.label_4.TabIndex = 7;
@@ -138,7 +138,7 @@
             this.label_3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label_3.AutoSize = true;
             this.label_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_3.Location = new System.Drawing.Point(349, 0);
+            this.label_3.Location = new System.Drawing.Point(348, 0);
             this.label_3.Name = "label_3";
             this.label_3.Size = new System.Drawing.Size(47, 52);
             this.label_3.TabIndex = 6;
@@ -160,7 +160,7 @@
             this.label_2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label_2.AutoSize = true;
             this.label_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_2.Location = new System.Drawing.Point(234, 0);
+            this.label_2.Location = new System.Drawing.Point(233, 0);
             this.label_2.Name = "label_2";
             this.label_2.Size = new System.Drawing.Size(47, 52);
             this.label_2.TabIndex = 5;
@@ -196,6 +196,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Show";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -205,7 +206,6 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Generate";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // panel1
             // 
@@ -225,6 +225,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Coordenadas";
             this.Text = "Coordenadas";
+            this.Load += new System.EventHandler(this.Coordenadas_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
