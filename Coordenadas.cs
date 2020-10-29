@@ -51,6 +51,38 @@ namespace timer
 
         //}
 
+        public string Obtener_numero()
+        {
+            int numero;
+            String numero_cadena;
+            Random r = new Random();
+            Diccionario1 = new Dictionary<String, String>();
+
+            //for (int i = 0; i < 20; i++)
+            //{
+
+            numero = r.Next(0, 9999);
+            numero_cadena = numero.ToString();
+
+            if (numero_cadena.Length == 1)
+            {
+                numero_cadena = "000" + numero_cadena;
+            }
+
+            else if (numero_cadena.Length == 2)
+            {
+                numero_cadena = "00" + numero_cadena;
+            }
+
+            else if (numero_cadena.Length == 3)
+            {
+                numero_cadena = "0" + numero_cadena;
+            }
+
+            return numero_cadena;
+            //}
+        }
+
         private void Coordenadas_Load(object sender, EventArgs e)
         {
             //Diccionario1 = new Dictionary<String, String>();
@@ -77,67 +109,43 @@ namespace timer
                 acumulador_letra++;
             }
 
+            //String dc_primer_valor = Obtener_numero();
 
-            string Obtener_numero()
-            {
-                int numero;
-                String numero_cadena;
-                Random r = new Random();
-                Diccionario1 = new Dictionary<String, String>();
-
-                //for (int i = 0; i < 20; i++)
-                //{
-
-                numero = r.Next(0, 9999);
-                numero_cadena = numero.ToString();
-
-                if (numero_cadena.Length == 1)
-                {
-                    numero_cadena = "000" + numero_cadena;
-                }
-
-                else if (numero_cadena.Length == 2)
-                {
-                    numero_cadena = "00" + numero_cadena;
-                }
-
-                else if (numero_cadena.Length == 3)
-                {
-                    numero_cadena = "0" + numero_cadena;
-                }
-
-                return numero_cadena;
-                //}
-            }
-
-            String hola = Obtener_numero();
-
-            Diccionario1.Add(id_codigo[0], hola);
+            //Diccionario1.Add(id_codigo[0], dc_primer_valor);
 
             for (int i = 0; i < 20; i++)
             {
-                String hola2;
+                String dc_valor;
+                dc_valor = Obtener_numero();
+                //MessageBox.Show(dc_valor);
+                //while (Diccionario1.ContainsValue(dc_valor) == true)
+                //{
+                //    dc_valor = Obtener_numero();
+                //}
 
-                do
-                {
-                    hola2 = Obtener_numero();
-
-                } while (Diccionario1.ContainsValue(hola2));
-
-                Diccionario1.Add(id_codigo[i], hola2);
+                Diccionario1.Add(id_codigo[i], dc_valor);
                 Label label_panel = new Label();
                 label_panel.Width = 80;
                 label_panel.Height = 80;
                 label_panel.BackColor = Color.White;
-                label_panel.Text = Diccionario1[id_codigo[i]].ToString();
+                label_panel.Text = Diccionario1[id_codigo[i]]
+                /*label_panel.Text = Diccionario1[id_codigo[i]].ToString()*/;
                 tableLayoutPanel1.Controls.Add(label_panel);
-
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            //foreach (var value in id_codigo.Values)
+            //{
+            //    Label label_panel = new Label();
+            //    label_panel.Width = 80;
+            //    label_panel.Height = 80;
+            //    label_panel.BackColor = Color.White;
+            //    label_panel.Text = Diccionario1[id_codigo[i]].ToString()
+            //    /*label_panel.Text = Diccionario1[id_codigo[i]].ToString()*/;
+            //    tableLayoutPanel1.Controls.Add(label_panel);
+            //}
         }
     }
 }

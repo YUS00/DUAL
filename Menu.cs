@@ -27,7 +27,10 @@ namespace timer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("BOTON1");
+            Coordenadas frm = new Coordenadas();
+
+            frm.Show();
+
         }
 
         private void Menu_Load(object sender, EventArgs e)
