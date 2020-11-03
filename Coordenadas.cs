@@ -17,48 +17,16 @@ namespace timer
             InitializeComponent();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        //private void button1_Click_1(object sender, EventArgs e)
-        //{
-
-
-        //    //if (Diccionario1.ContainsKey(id_codigo[i]))
-        //    //{
-        //    //    Diccionario1.Remove(id_codigo[i]);
-        //    //    i--;
-        //    //}
-        //    //else
-        //    //{
-        //    //    Label label_panel = new Label();
-        //    //    label_panel.Width = 80;
-        //    //    label_panel.Height = 80;
-        //    //    label_panel.BackColor = Color.White;
-        //    //    label_panel.Text = Diccionario1[id_codigo[i]].ToString();
-        //    //    tableLayoutPanel1.Controls.Add(label_panel);
-        //    //}
-
-        //}
-
         Dictionary<String, String> Diccionario1;
         String[] id_codigo = new string[20];
+
 
         public string Obtener_numero()
         {
             int numero;
             String numero_cadena;
             Random r = new Random();
-            Diccionario1 = new Dictionary<String, String>();
-
+            
             numero = r.Next(0, 9999);
             numero_cadena = numero.ToString();
 
@@ -82,11 +50,8 @@ namespace timer
 
         public void Coordenadas_Load(object sender, EventArgs e)
         {
-            //Diccionario1 = new Dictionary<String, String>();
-            //Random r = new Random();
-            //int numero;
+            Diccionario1 = new Dictionary<String, String>();
             String letra;
-            //String numero_cadena;
             String codigo;
 
             char[] char_codigo_letra = "ABCD".ToCharArray();
@@ -110,7 +75,7 @@ namespace timer
             //Diccionario1.Add(id_codigo[0], dc_primer_valor);
 
 
-                for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 20; i++)
             {
                 String dc_valor;
                 dc_valor = Obtener_numero();
@@ -120,30 +85,36 @@ namespace timer
                 }
 
                 Diccionario1.Add(id_codigo[i], dc_valor);
-                //Label label_panel = new Label();
-                //label_panel.Width = 80;
-                //label_panel.Height = 80;
-                //label_panel.BackColor = Color.White;
-                //label_panel.Text = Diccionario1[id_codigo[i]]
-                ///*label_panel.Text = Diccionario1[id_codigo[i]].ToString()*/;
-                //tableLayoutPanel1.Controls.Add(label_panel);
             }
+
+            //foreach (KeyValuePair<string, string> entry in Diccionario1)
+            //{
+            //    Label label_panel = new Label();
+            //    label_panel.Width = 80;
+            //    label_panel.Height = 80;
+            //    label_panel.BackColor = Color.White;
+            //    label_panel.Text = entry.Value;
+            //    /*label_panel.Text = Diccionario1[id_codigo[i]].ToString()*/
+            //    tableLayoutPanel1.Controls.Add(label_panel);
+            //    //i++;
+            //}
+
         }
 
         public void button2_Click(object sender, EventArgs e)
         {
-            int i = 0;
-
             foreach (KeyValuePair<string, string> entry in Diccionario1)
             {
                 Label label_panel = new Label();
-                label_panel.Width = 80;
-                label_panel.Height = 80;
+                label_panel.Font = new Font("Murtuza",14);
+                label_panel.Width = 130;
+                label_panel.Height = 130;
                 label_panel.BackColor = Color.White;
-                label_panel.Text = Diccionario1[id_codigo[i]].ToString();
+                label_panel.Text = entry.Value;
+                //label_panel.TextAlign = HorizontalAlignment.Center;
                 /*label_panel.Text = Diccionario1[id_codigo[i]].ToString()*/
                 tableLayoutPanel1.Controls.Add(label_panel);
-                i++; 
+                //i++;
             }
         }
     }
