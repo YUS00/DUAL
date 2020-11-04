@@ -15,6 +15,7 @@ namespace timer
         {
 
             circularProgressBar1.Value += 1;
+            UpdateLabel();
 
             if (circularProgressBar1.Value == 100)
             {
@@ -45,5 +46,13 @@ namespace timer
                 this.Hide();
             }
         }
+
+        private void UpdateLabel()
+        {
+            double pgb_valor = ((circularProgressBar1.Value * 100) / circularProgressBar1.Maximum);
+            lab_splashl_load.Text = pgb_valor.ToString() + "%";
+        }
+
+
     }
 }

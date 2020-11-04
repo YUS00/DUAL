@@ -153,6 +153,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -182,6 +183,21 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MESSI_LogIn_PanelBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MESSI_KeyPad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15749bad338b52eeb304f7d7bb372d90.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Libreria_Clases_DUAL_1\Libreria_Clases_DUAL_1\Libreria_Clases_DUAL_1.csproj">
+      <Project>{30aaa2dd-dd84-4741-aa88-55986c4b5d66}</Project>
+      <Name>Libreria_Clases_DUAL_1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
