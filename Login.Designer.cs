@@ -129,7 +129,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.BackgroundImage = global::timer.Properties.Resources.MESSI_LogIn_PanelBG;
+            this.panel1.BackgroundImage = global::timer.Properties.Resources.MESSI_KeyPadBG;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label4);
@@ -145,7 +146,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Maroon;
-            this.panel2.BackgroundImage = global::timer.Properties.Resources.MESSI_KeyPad;
+            this.panel2.BackgroundImage = global::timer.Properties.Resources.MESSI_LogIn_PanelBG;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Location = new System.Drawing.Point(29, 136);

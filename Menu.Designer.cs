@@ -42,9 +42,10 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 25);
+            this.button1.Location = new System.Drawing.Point(0, 62);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 84);
+            this.button1.Size = new System.Drawing.Size(203, 103);
             this.button1.TabIndex = 0;
             this.button1.Text = "Opciò 1";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -57,9 +58,10 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 127);
+            this.button2.Location = new System.Drawing.Point(0, 173);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(152, 84);
+            this.button2.Size = new System.Drawing.Size(203, 103);
             this.button2.TabIndex = 1;
             this.button2.Text = "Opciò 2";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -72,9 +74,10 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 231);
+            this.button3.Location = new System.Drawing.Point(0, 284);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(152, 84);
+            this.button3.Size = new System.Drawing.Size(203, 103);
             this.button3.TabIndex = 2;
             this.button3.Text = "Opciò 3";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -87,10 +90,10 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 332);
+            this.button4.Location = new System.Drawing.Point(0, 391);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(152, 84);
+            this.button4.Size = new System.Drawing.Size(203, 103);
             this.button4.TabIndex = 3;
             this.button4.Text = "Opciò 4";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -99,18 +102,23 @@
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = null;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(854, 516);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Menu";
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
+            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.button2, 0);
+            this.Controls.SetChildIndex(this.button3, 0);
+            this.Controls.SetChildIndex(this.button4, 0);
             this.ResumeLayout(false);
 
         }

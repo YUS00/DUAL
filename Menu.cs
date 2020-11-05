@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace timer
 {
-    public partial class Menu : Form
+    public partial class Menu : Libreria_Clases_DUAL_1.lc_Prototipado
     {
         public Menu()
         {
