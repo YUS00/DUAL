@@ -2,6 +2,7 @@
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace timer
 {
@@ -55,7 +56,15 @@ namespace timer
 
         private void register_bttn_Click(object sender, EventArgs e)
         {
+            string key = "Prueba";
+            string value = "hola2";
 
+            var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            var settings = configFile.AppSettings.Settings;
+
+            settings.Add(key, value);
+            configFile.Save(ConfigurationSaveMode.Modified);
+            ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);
         }
     }
 }
